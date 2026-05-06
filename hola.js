@@ -388,7 +388,7 @@ function calcularTotal(){
  var trans = parseFloat(document.getElementById('transporte').value);
     var totalTransporte = trans + totalInstalacion +valorConPorcentaje;
 
-    document.getElementById('VTV').innerText = "La instalacion Total es: $" + totalTransporte ;//.toFixed(2) esto es para los pesos
+    document.getElementById('VTV').innerText = "El valor del servicio Total es: $" + totalTransporte ;//.toFixed(2) esto es para los pesos
 
 };
 
@@ -1079,6 +1079,6 @@ var costoPelicula = altoP * anchoP * pelicula;
  var transC = parseFloat(document.getElementById('transporteC').value);
     var totalTransporteC = VAcosto + valorConPorcentajeC + costoPelicula +totalInstalacionC + transC  ;
 
-    document.getElementById('VTVC').innerHTML = "La instalacion Total es: $" + totalTransporteC ;//.toFixed(2) esto es para los pesos
+    document.getElementById('VTVC').innerHTML = "El valor del servicio completo es:$" + totalTransporteC + "+ IVA";//.toFixed(2) esto es para los pesos
 
 };
