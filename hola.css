@@ -1,0 +1,44 @@
+body{
+  background: rgb(154, 77, 77);
+}
+/* General container styling */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2rem;
+  justify-content: space-between;
+  gap: 20px; /* Espacio entre columnas */
+  padding: 20px;
+  background: rgb(84, 84, 84);
+}
+.column2{
+  flex: 1; /* Cada columna toma el mismo espacio disponible */
+
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: rgb(120, 120, 120);
+}
+.column3{
+  flex: 1; /* Cada columna toma el mismo espacio disponible */
+  min-width: 300px; /* Ancho mínimo para cada columna */
+  max-width: calc(33.33% - 20px); /* Ajustar para mantener espacio entre columnas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+}
+
+/* Column styling */
+
+
+/* Responsive design for small screens */
+

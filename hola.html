@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="hola.css">
+  
+</head>
+
+<body id="container">
+    
+    <script src="hola.js"></script>
+
+  <div id="column">
+    <h1>TABLA DE COSTOS TESLA ARQUITECTURA</h1>
+    
+        <div class="container">
+         <label for="alto">Alto (metros):</label>
+        <input type="number" id="alto" step="0.1" required>
+        <br>
+        <label for="ancho">Ancho (metros):</label>
+        <input type="number" id="ancho" step="0.1" required>
+        </div>
+
+<br>
+
+       <div >
+
+<div class="container" id="etiquetaN" onclick="cambiarColor('etiquetaN')">
+            <div class="column" >
+                   <label for="tipoTrabajo">Tipo de Trabajo</label>
+            </div>
+                 <div class="column" >
+                    <select id="tipoTrabajo" onchange="mostrarImagenDepend()">
+                        <option value="opcion1" data-nombre="PUERTA BATIENTE DE CRISTAL TEMPLADO">PUERTA BATIENTE DE CRISTAL TEMPLADO</option>
+                        <option value="opcion12" data-nombre="PUERTA BATIENTE DE CRISTAL TEMPLADO CON POSTE DE GIRO">PUERTA BATIENTE DE CRISTAL TEMPLADO CON POSTE DE GIRO</option>
+                        <option value="opcion1" data-nombre="PUERTA BATIENTE DE VIDRIO CRUDO">PUERTA BATIENTE DE VIDRIO CRUDO</option>                     
+                        <option value="opcion2" data-nombre="PUERTA BATIENTE CON MODULO FIJO EN CRISTAL TEMPLADO">PUERTA BATIENTE CON MODULO FIJO EN CRISTAL TEMPLADO</option>
+                        <option value="opcion3" data-nombre="PUERTA BATIENTE DE MARCO EN ALUMINIO CON CRISTAL TEMPLADO">PUERTA BATIENTE DE MARCO EN ALUMINIO CON CRISTAL TEMPLADO</option>
+                        <option value="opcion3" data-nombre="PUERTA BATIENTE DE MARCO EN ALUMINIO CON VIDRIO CRUDO">PUERTA BATIENTE DE MARCO EN ALUMINIO CON VIDRIO CRUDO</option>
+                        
+                        <option value="opcion4" data-nombre="PUERTA BATIENTE DOBLE CON CRISTAL TEMPLADO">PUERTA BATIENTE DOBLE CON CRISTAL TEMPLADO</option>
+                        <option value="opcion3.1" data-nombre="PUERTA BATIENTE DOBLE CON MARCO EN ALUMINIO EN CRISTAL TEMPLADO">PUERTA BATIENTE DOBLE CON MARCO EN ALUMINIO EN CRISTAL TEMPLADO</option>
+                        <option value="opcion3.1" data-nombre="PUERTA BATIENTE DOBLE CON MARCO EN ALUMINIO EN VIDRIO CRUDO">PUERTA BATIENTE DOBLE CON MARCO EN ALUMINIO EN VIDRIO CRUDO</option>
+                        <option value="opcion11" data-nombre="PUERTA BATIENTE DOBLE CON CRISTAL TEMPLADO CON POSTES DE GIRO">PUERTA BATIENTE DOBLE CON CRISTAL TEMPLADO CON POSTES DE GIRO</option>
+                       
+                       
+
+                        <option value="opcion6" data-nombre="PUERTA CORREDIZA CON CRISTAL TEMPLADO">PUERTA CORREDIZA DE CRISTAL CON CRISTAL TEMPLADO</option>
+                        <option value="opcion6" data-nombre="PUERTA CORREDIZA CON VIDRIO CRUDO">PUERTA CORREDIZA DE CRISTAL CON VIDRIO CRUDO</option>
+                        <option                 data-nombre="PUERTA CORREDIZA DOBLE CON CRISTAL TEMPLADO">PUERTA CORREDIZA DOBLE CON CRISTAL TEMPLADO</option>
+                        <option                 data-nombre="PUERTA CORREDIZA DOBLE CON VIDRIO CRUDO">PUERTA CORREDIZA DOBLE CON VIDRIO CRUDO</option>
+                        <option value="opcion7" data-nombre="PUERTA CORREDIZA CON MARCO EN ALUMINIO DE CRISTAL TEMPLADO">PUERTA CORREDIZA CON MARCO EN ALUMINIO DE CRISTAL TEMPLADO </option>
+                        <option value="opcion7" data-nombre="PUERTA CORREDIZA CON MARCO EN ALUMINIO DE VIDRIO CRUDO">PUERTA CORREDIZA CON MARCO EN ALUMINIO DE VIDRIO CRUDO </option>
+
+                        <option value="opcion8" data-nombre="PUERTA PLEAGABLE DE CRISTAL TEMPLADO ">PUERTA PLEAGABLE DE CRISTAL TEMPLADO</option>
+
+                       <option value="opcion5" data-nombre="FACHADA BATIENTE CON CRISTAL TEMPLADO">FACHADA BATIENTE CON CRISTAL TEMPLADO</option>
+                        <option value="opcion9"  data-nombre="FACHADA CORREDIZA CON CRISTAL TEMPLADO">FACHADA CORREDIZA CON CRISTAL TEMPLADO</option>
+                        <option  value="opcion9"  data-nombre="FACHADA CORREDIZA CON VIDRIO CRUDO ">FACHADA CORREDIZA CON VIDRIO CRUDO </option>
+                        <option value="opcion10"  data-nombre="FACHADA EN CRISTAL TEMPLADO">FACHADA EN CRISTAL TEMPLADO</option>
+                        <option value="opcion11"  data-nombre="FACHADA EN CRISTAL TEMPLADO">FACHADA EN CRISTAL TEMPLADO CON POSTE DE GIRO</option>
+                        <option value="opcion10" data-nombre="FACHADA EN VIDRIO CRUDO">FACHADA EN VIDRIO CRUDO </option>
+
+                        <option value="opcion13" data-nombre="DIVISION DE BAÑO ">DIVISION DE BAÑO </option>
+                        <option value="opcion14" data-nombre="DIVISION EN BAÑO DE LUJO">DIVISION EN BAÑO DE LUJO</option>
+                        <option value="opcion13" data-nombre="DIVISION DE BAÑO CORREDIZA">DIVISION DE BAÑO CORREDIZA </option>
+                        <option value="opcion15" data-nombre="DIVISION DE BAÑO BATIENTE">DIVISION DE BAÑO BATIENTE</option>                       
+                        <option value="opcion16" data-nombre="DIVISION DE BAÑO PLEAGABLE">DIVISION DE BAÑO PLEAGABLE</option>
+
+                        <option value="opcion17" data-nombre="DIVISION DE OFICINA">DIVISION DE OFICINA </option>
+                        <option value="opcion17" data-nombre="DIVISION EN OFICINA DE LUJO">DIVISION EN OFICINA DE LUJO </option>
+                        <option value="opcion" data-nombre="DIVISION DE OFICINA CORREDIZA">DIVISION DE OFICINA CORREDIZA</option>
+                        <option value="opcion17" data-nombre="DIVISION DE OFICINA BATIENTE">DIVISION DE OFICINA BATIENTE</option>
+                        <option value="opcion18" data-nombre="DIVISION DE OFICINA PLEAGABLE">DIVISION DE OFICINA PLEAGABLE</option>
+                        
+                        <option value="opcion19" data-nombre="DIVISION DE COCINA">DIVISION DE COCINA</option>
+                        <option value="opcion15" data-nombre="DIVISION DE COCINA CORREDIZA">DIVISION DE COCINA CORREDIZA</option>
+                        <option value="opcion15" data-nombre="DIVISION DE COCINA BATIENTE">DIVISION DE COCINA BATIENTE</option>
+                        <option value="opcion15" data-nombre="DIVISION DE COCINA PLEAGABLE">DIVISION DE COCINA PLEAGABLE</option>
+
+                        
+                        <option value="opcion15" data-nombre="DIVISION EN CRISTAL">DIVISION EN CRISTAL </option>
+                        <option value="opcion15" data-nombre="DIVISION EN CRISTAL TEMPLADO PLEGABLE ">DIVISION EN CRISTAL TEMPLADO PLEGABLE </option>
+
+                        <option value="opcion15" data-nombre="DIVISION EN CRISTAL TEMPLADO CON PUERTA CORREDIZA">DIVISION EN CRISTAL TEMPLADO CON PUERTA CORREDIZA</option>
+                        <option value="opcion15" data-nombre="DIVISION EN VIDRIO CRUDO CON PUERTA CORREDIZA">DIVISION EN VIDRIO CRUDO CON PUERTA CORREDIZA</option>
+
+                        <option value="opcion15" data-nombre="DIVISION EN CRISTAL TEMPLADO CON PUERTA BATIENTE">DIVISION EN CRISTAL TEMPLADO CON PUERTA BATIENTE</option>
+                        <option value="opcion15" data-nombre="DIVISION EN VIDRIO CRUDO CON PUERTA BATIENTE">DIVISION EN VIDRIO CRUDO CON PUERTA BATIENTE</option>
+
+                        <option value="opcion15" data-nombre="DIVISION EN CRISTAL TEMPLADO CON PUERTA AUXILIAR">DIVISION EN CRISTAL TEMPLADO CON PUERTA AUXILIAR</option>
+                        <option value="opcion15" data-nombre="DIVISION EN VIDRIO CRUDO CON PUERTA AUXILIA">DIVISION EN VIDRIO CRUDO CON PUERTA AUXILIAR</option>
+
+                        <option value="opcion15" data-nombre="DIVISION DE AREA EN CRISTAL TEMPLADO">DIVISION DE AREA EN CRISTAL TEMPLADO</option>
+                        <option value="opcion15" data-nombre="DIVISION DE AREA EN VIDRIO CRUDO">DIVISION DE AREA EN VIDRIO CRUDO</option>
+
+                        <option value="opcion15" data-nombre="DIVISION EN AREA DE BODEGA EN CRISTAL TEMPLADO">DIVISION EN AREA DE BODEGA EN CRISTAL TEMPLADO</option>
+    
+                        <option value="opcion15" data-nombre="DIVISION MODERNA EN CRISTAL TEMPLADO ">DIVISION MODERNA EN CRISTAL TEMPLADO </option>
+                        <option value="opcion15" data-nombre="DIVISION MODERNA EN VIDRIO CRUDO">DIVISION MODERNA EN VIDRIO CRUDO </option>
+                        <option value="opcion15" data-nombre="DIVISION MODERNA PLEGABLE EN CRISTAL TEMPLADO">DIVISION MODERNA PLEGABLE EN CRISTAL TEMPLADO </option>
+                        <option value="opcion15" data-nombre="DIVISION MODERNA PLEGABLE EN VIDRIO CRUDO">DIVISION MODERNA PLEGABLE EN VIDRIO CRUDO </option>
+                        <option value="opcion15" data-nombre="DIVISION MODERNA PLEGABLE">DIVISION MODERNA PLEGABLE </option>
+
+                        <option value="opcion15" data-nombre="BARANDAS EN ACERO Y CRISTAL TEMPLADO">BARANDAS EN ACERO Y CRISTAL TEMPLADO</option>
+                        <option value="opcion15" data-nombre="BARANDAS EN ACERO Y VIDRIO CRUDO">BARANDAS EN ACERO Y VIDRIO CRUDO</option>
+                        <option value="opcion15" data-nombre="PASAMANOS EN ACERO Y CRISTAL TEMPLADO">PASAMANOS EN ACERO Y CRISTAL TEMPLADO</option>
+                        <option value="opcion15" data-nombre="PASAMANOS EN ACERO Y VIDRIO CRUDO">PASAMANOS EN ACERO Y VIDRIO CRUDO</option>
+
+                        <option data-nombre="CERRAMIENTO CON CRISTAL TEMPLADO">CERRAMIENTO CON CRISTAL TEMPLADO</option>
+
+                        <option data-nombre="VENTANERIA CON MARCO EN ALUMINIO Y VIDRIO CRUDO">VENTANERIA CON MARCO EN ALUMINIO Y VIDRIO CRUDO</option>
+
+                        <option data-nombre="VENTANERIA CON MARCO EN ALUMINIO Y CRISTAL TEMPLADO">VENTANERIA CON MARCO EN ALUMINIO Y CRISTAL TEMPLADO</option>
+                        <option data-nombre="VENTANERIA CON MARCO EN ALUMINIO Y VIDRIO CRUDO">VENTANERIA CON MARCO EN ALUMINIO Y VIDRIO CRUDO</option>
+
+
+                    </select>
+                 </div>
+              </div>
+        <br>
+
+        
+
+
+<div class="container" id="etiqueta1" onclick="cambiarColor('etiqueta1')">
+<div class="column" >
+       <label for="tipoVidrio">Tipo de Vidrio:</label>
+</div>
+     <div class="column" >
+        <select id="tipoVidrio">
+            <option  value="54091" data-nombre="VIDRIO ES CRUDO INCOLORO EN 4mm">ESPEJO 4mm(+$54.091)</option>
+            <option value="72344" data-nombre="VIDRIO ES CRUDO INCOLORO EN 4mm">VIDRIO ESPEJO 4mm(+$72.344)</option>
+            <option value="54091" data-nombre="VIDRIO ES CRUDO INCOLORO EN 4mm">Vidrio Crudo 4mm(+$54.091)</option>
+            <option value="70786" data-nombre="VIDRIO ES CRUDO COLOR BRONCE EN 4mm">Vidrio Crudo COLOR BRONCE 4mm(+$70.786)</option>
+            <option value="76351" data-nombre="VIDRIO ES CRUDO INCOLORO EN 5mm">Vidrio Crudo 5mm(+$76.351")</option>
+            <option value="86546" data-nombre="VIDRIO ES ESMERILADO PULIDO EN 5mm">Vidrio Esmerilado 4mm(+$86.546")</option>
+            <option id="vidrio6mm" value="146804" data-nombre="CRISTAL ES TEMPLADO INCOLORO, PULIDO Y PERFORADO EN 6mm">Vidrio Templado 6mm(+$146.804)</option>
+             <option  value="240700" data-nombre="CRISTAL ES TEMPLADO INCOLORO, PULIDO Y PERFORADO EN 6mm BRONCE">Vidrio Templado 6mm BRONCE(+$240.700)</option>
+            <option id="vidrio8mm" value="193995" data-nombre="CRISTAL ES TEMPLADO INCOLORO, PULIDO Y PERFORADO EN 8mm">Vidrio Templado 8mm(+$193.995)</option>
+            <option  value="294165" data-nombre="CRISTAL ES TEMPLADO INCOLORO, PULIDO Y PERFORADO EN 8mm">Vidrio Templado 8mm COLOR BRONCE(+$294.165)</option>
+            <option id="vidrio10mm" value="221500" data-nombre="CRISTAL ES TEMPLADO INCOLORO, PULIDO Y PERFORADO EN 10mm">Vidrio Templado 10mm(+$221.500)</option>
+            <option value="329448" data-nombre="CRISTAL ES TEMPLADO INCOLORO, PULIDO Y PERFORADO EN 10mm">Vidrio Templado 10mm COLOR BRONCE(+$329.448)</option>
+            <option value="146804" data-nombre="VIDRIO ES DE SEGURIDAD CRUDO INCOLORO, PULIDO Y PERFORADO EN 3+3mm">Vidrio Laminado Crudo 3+3(+$146.804)</option>
+            <option value="190846" data-nombre="VIDRIO ES DE SEGURIDAD CRUDO INCOLORO, PULIDO Y PERFORADO EN 3+3mm BRONCE">Vidrio Laminado Crudo 3+3 BRONCE(+$190846)</option>
+            <option value="220819" data-nombre="VIDRIO ES DE SEGURIDAD CRUDO INCOLORO, PULIDO Y PERFORADO EN 4+4mm">Vidrio Laminado Crudo 4+4(+$220.819)</option>
+            <option id="vidrio4_4mm" value="512647" data-nombre="CRISTAL ES DE SEGURIDAD TEMPLADO INCOLORO, PULIDO Y PERFORADO EN 4+4mm">Vidrio Laminado Templado 4+4(+$512647)</option>
+            <option id="vidrio5_5mm" value="723783" data-nombre="CRISTAL ES DE SEGURIDAD TEMPLADO INCOLORO, PULIDO Y PERFORADO EN 5+5mm">Vidrio Laminado Templado 5+5(+$723.783)</option>
+            <option value="834972" data-nombre="CRISTAL ES DE SEGURIDAD TEMPLADO INCOLORO, PULIDO Y PERFORADO EN 5+5mm">Vidrio MultiLaminado Templado 5+5+5(+$834.972)</option>
+            <option value="667800" data-nombre="CRISTAL ES INSONORO">Vidrio Insonoro(+$667.800)</option>
+        <option value="1200000" data-nombre="CRISTAL ES termoacustico">Vidrio termoacustico(+$1.200.000)</option>
+        </select>
+     </div>
+  </div>
+
+<br>
+
+ <div class="container" id="etiqueta2" onclick="cambiarColor('etiqueta2')">
+            <div class="column">
+                <label for="chapa">Chapa</label>
+            </div>
+            <div class="column">
+
+                <select id="chapa">
+                    <option value="0">Ninguno</option>
+                    <option value="174407" data-nombre="chapa de seguridad sencilla">Chapa de seguridad sencilla con recibidor(+$174.407)</option>
+                    <option id="chapaDA" value="213028" data-nombre="Chapa de seguridad con recibidor Alum">Chapa de seguridad con recibidor Aluminio(+$213.028)</option>
+                    <option id="chapaDAcero" value="283035" data-nombre="Chapa de seguridad con recibidor Acero">Chapa de seguridad con recibidor Acero(+$283.035)</option>
+                </select>
+            </div>
+            <div class="column">
+                <label for="cantidadChapa">Cantidad:</label>
+            </div>
+            <div class="column">
+                <input type="number" id="cantidadChapa" value="1" min="1">
+            </div>
+ </div>
+
+ <br>
+
+<div class="container"  id="etiqueta3" onclick="cambiarColor('etiqueta3')">
+            <div class="column">
+                <label for="pasador">Pasadores</label>
+            </div>
+            <div class="column">
+                <select id="pasador">
+                    <option value="0">Ninguno</option>
+                    <option id="pasadorDePiso" value="49639" data-nombre="PASADOR SENCILLO">PASADOR SENCILLO Aluminio(+$49.639)</option>
+                    <option id="pasadorSobrePoner" value="72456" data-nombre="PASADOR SENCILLO DE SOBRE PONER">PASADOR SENCILLO DE SOBRE PONER (+$72.456)</option>
+                </select>
+            </div>
+            <div class="column">
+                <label for="cantidadPasador">Cantidad:</label>
+            </div>
+            <div class="column">
+                <input type="number" id="cantidadPasador" value="1" min="1">
+            </div>
+</div>
+        
+<br>
+
+<div  class="container" id="etiqueta4" onclick="cambiarColor('etiqueta4')">
+                <div class="column">
+                    <label for="goma">Pf Burbuja</label>
+                </div>
+                <div class="column">
+                    <select id="goma">
+                        <option value="0">Ninguno</option>
+                        <option value="11130" data-nombre="PERFIL BURBUJA">PERFIL BURBUJA (+$11.130" )</option>
+                        <option value="25000" data-nombre="PERFIL BURBUJA INMANTADO">PERFIL BURBUJA INMANTADO (+$25.000 )</option>
+                    </select>
+                </div>
+                <div class="column">
+                    <label for="cantidadPfb">Cantidad:</label>
+                </div>
+                <div class="column">
+                    <input type="number" id="cantidadPfb" value="1" min="1">
+                </div>
+ </div>
+        
+<br>
+
+<div class="container" id="etiqueta5" onclick="cambiarColor('etiqueta5')">
+                <div class="column">
+                    <label for="sA">Sistema auto</label>
+                </div>
+                <div class="column">
+                    <select id="sA">
+                        <option value="0">Ninguno</option>
+ <option id="SA2" value="5000000" >S.AUTOMATICO DE 2METROS DE 1 HOJA(+$5.000.000)</option>
+ <option id="SA3" value="7000000" >S.AUTOMATICO DE 3METROS DE DOS HOJAS DE 75CM o 1 HOJA DE 1.50CM(+$7.000.000)</option>
+ <option id="SA4" value="9000000" >S.AUTOMATICO DE 4METROS DE DOS HOJAS DE 1METRO (+$9.000.000)</option>
+ <option id="SA6" value="11000000" >S.AUTOMATICO DE 6METROS DE DOS HOJAS DE 1.50CM (+$11.000.000)</option>
+                    </select>
+                </div>
+                <div class="column">
+                    <label for="cantidadSa">Cantidad:</label>
+                </div>
+                <div class="column">
+                    <input type="number" id="cantidadSa" value="1" min="1">
+                </div>
+  </div>
+
+ <br>
+
+  <div class="container" id="etiqueta6" onclick="cambiarColor('etiqueta6')">
+                <div class="column">
+                    <label for="pfAbajo">Perfileria Baja</label>
+                </div>
+                <div class="column">
+                    <select id="pfAbajo">
+                        <option value="0">Ninguno</option>
+                        <option id="perfilF" value="22260" data-nombre="Perfileria">PERFILES INFE o SUPE (+$22.260)</option>
+                    </select>
+                </div>
+                <div class="column">
+                    <label for="cantidadpfAbajo">Cantidad:</label>
+                </div>
+                <div class="column">
+                    <input type="number" id="cantidadpfAbajo" value="1" min="1">
+                </div>
+ </div>
+
+ <br>
+
+<div class="container" id="etiqueta7" onclick="cambiarColor('etiqueta7')">
+<div class="column">
+    <label for="manijas">Manijas:</label>
+</div>
+    <div class="column" >
+    <select id="manijas">
+            <option value="0">Ninguna</option>
+            <option id="manijaA40cm" value="55093" data-nombre="Manija Agarradera Aluminio">Manija Agarradera Aluminio 40CM(+$55093)</option>
+            <option id="manijaAcero40cm" value="66223" data-nombre="Manija Agarradera Acero">Manija Agarradera Acero 40CM(+$66.223)</option>
+            <option id="manijaA60cm" value="77353" data-nombre="Manija Agarradera Aluminio">Manija Agarradera Aluminio 60CM(+$77.353)</option>
+            <option id="manijaAcero60cm" value="88483" data-nombre="Manija Agarradera Acero">Manija Agarradera Acero 60CM($88.483)</option>
+            <option id="manijaAcero1M" value="133560" data-nombre="Manija Agarradera Acero">Manija Agarradera Acero 1METRO($133.560)</option>
+        </select>
+    </div>
+    <div class="column">
+        <label for="cantidadManijas">Cantidad:</label>
+    </div>
+    <div class="column">
+        <input type="number" id="cantidadManijas" value="1" min="1">
+    </div>
+ </div>    
+
+<br>
+
+<div class="container" id="etiqueta8" onclick="cambiarColor('etiqueta8')">
+        <div class="column" >
+            <label for="bisagras">Bisagra Hidrau:</label>
+        </div>
+        <div class="column">
+            <select id="bisagras">
+                <option value="0">Ninguna</option>
+                <option id="bHEstandar" value="491055" data-nombre="BISAGRA HIDRAULICA ESTANDAR">Bisagra hidraulica estandar(+$491.055)</option>
+                <option id="bHSpeedy" value="834750" data-nombre="BISAGRA HIDRAULICA SPEEY">Bisagra hidraulica speedy(+$834.750)</option>
+            </select>
+        </div>
+        <div class="column">
+            <label for="cantidadBisagras">Cantidad:</label>
+        </div>
+        <div class="column">
+            <input type="number" id="cantidadBisagras" value="1"  min="1">
+        </div>
+ </div>
+ 
+<br>
+
+<div class="container" id="etiqueta9" onclick="cambiarColor('etiqueta9')">
+<div class="column">
+    <label for="chapetas">Chapetas</label>
+</div>
+<div class="column">
+    <select id="chapetas">
+        <option value="0">Ninguno</option>
+        <option id="chapetasDeA" value="66557" data-nombre="CHAPETA DE GIRO EN ALUMINIO">Chapeta de giro Aluminio (+$66.557)</option>
+        <option id="chapetasDeAcero"  value="77687" data-nombre="CHAPETA DE GIRO EN ACERO">Chapeta de giro Acero (+$77.687)</option>
+    </select>
+</div>
+<div class="column">
+    <label for="cantidadChapetas">Cantidad:</label>
+</div>
+<div class="column">
+    <input type="number" id="cantidadChapetas" value="1" min="1">
+</div>
+</div>
+
+<br>
+
+ <div class="container" id="etiqueta10" onclick="cambiarColor('etiqueta10')">
+<div class="column">
+    <label for="puntosFijos">Puntos fijos</label>
+</div>
+<div class="column">
+    <select id="puntosFijos">
+        <option value="0" >Ninguno</option>
+        <option value="16695" data-nombre="PUNTOS FIJOS">dilatadores(+$16.695)</option>
+        <option id="puntosFijosPequeños" value="24374" data-nombre="PUNTOS FIJOS">Pie de amigos(+$24.374)</option>
+        <option value="44520" data-nombre="PUNTOS FIJOS LARGOS">Pie de amigos Largos(+$44.520)</option>
+    </select>
+</div>
+<div class="column">
+    <label for="cantidadPuntosFijos">Cantidad:</label>
+</div>
+<div class="column">
+    <input type="number" id="cantidadPuntosFijos" value="1" min="1">
+</div>
+ </div>
+
+ <br>
+   
+<div class="container" id="etiqueta11" onclick="cambiarColor('etiqueta11')">
+    <div class="column">
+        <label for="poste">Poste</label>
+    </div>  
+    <div class="column">
+        <select id="poste">
+            <option value="0">Ninguno</option>
+            <option id="posteDeGiro" value="210023" data-nombre="POSTE DE GIRO 2'">Poste de giro 2" (+$210.023)</option>
+            <option value="146693" data-nombre="POSTE FIJO DE 180º">Poste fijo DE 180" (+$146.693)</option>
+        </select>
+    </div>
+    <div class="column">
+        <label for="cantidadPoste">Cantidad:</label>
+    </div>
+    <div class="column">
+        <input type="number" id="cantidadPoste" value="1" min="1">
+    </div>
+ </div>
+
+<br>
+
+<div class="container" id="etiqueta12" onclick="cambiarColor('etiqueta12')">
+    <div class="column">
+        <label for="otros">otros</label>
+    </div>
+    <div class="column">
+        <select id="otros">
+            <option value="0">Ninguno</option>
+            <option value="11130" data-nombre="BOTON">BOTON (+$11.130)</option>
+            <option value="11130" data-nombre="MEDIA LUNA">MEDIA LUNA (+$11.130)</option>
+            <option id="bisagrasDeMuro" value="44520" data-nombre="BISAGRAS MEDIAS">Bisagras o Chapetas medias (+$44.520)</option>
+            <option  value="300000" data-nombre="ventana Domiciliara">Ventana Domiciliara (+$300.000)</option>
+        </select>
+    </div>
+    <div class="column">
+        <label for="cantidadOtros">Cantidad:</label>
+    </div>
+    <div class="column">
+        <input type="number" id="cantidadOtros" value="1" min="1">
+    </div>
+</div>
+
+<br>
+
+ <div class="container" id="etiqueta13" onclick="cambiarColor('etiqueta13')">
+        <div class="column">
+            <label for="zocalo">Zocalo</label>
+        </div>
+        <div class="column">
+            <select id="zocalo">
+                <option value="0">Ninguno</option>
+                <option value="206985" data-nombre="ZOCALO ALUM COLOR BLANCO MATE CON EMPAQUE">ZOCALO ALUM COLOR BLANCO MATE CON EMPAQUE(+$206.985)</option>            </select>
+        </div>
+        <div class="column">
+            <label for="cantidadZocalo">Cantidad:</label>
+        </div>
+        <div class="column">
+            <input type="number" id="cantidadZocalo" value="1" min="1">
+        </div>
+ </div>
+
+ <br>
+
+<div class="container" id="etiqueta14" onclick="cambiarColor('etiqueta14')">
+        <div class="column">
+            <label for="color">Pelicula</label>
+        </div>
+        <div class="column">
+            <select id="color">
+                <option value="0">Ninguno</option>
+                <option value="58300" data-nombre="PELICULA">PELICULA OSCURA O INCOLORA / SIN DISEÑO  (+$58.300 )</option>
+                <option value="58300" data-nombre="PAPEL SAMBLASTING">PAPEL SAMBLASTING / DEPENDEMOS DEL DISEÑO </option>
+            </select>
+        </div>
+  </div>
+       
+  <br>
+    
+  <div class="container" id="etiqueta15" onclick="cambiarColor('etiqueta15')">   
+            <div class="column">
+                <label for="kits">Kits</label>
+            </div>
+            <div class="column">
+                <select id="kits">
+                    <option value="0">Ninguno</option>
+                    <option value="151300" data-nombre="KIT DE DIVISION DE CORREDIZA">KIT DE DIVISION DE 2M HACIA ABAJO CORREDIZA(MANIJA, CERRADURA)(+$151.300)</option>
+                    <option value="391647" data-nombre="KIT DE DIVISION DE LUJO">KIT DE DIVISION DE 2M HACIA ABAJO DE LUJO(MANIJA, CERRADURA)(+$391.647)</option>
+                    <option value="142797" data-nombre="KIT DE DIVISION DE BAÑO BATIENTE">KIT DE DIVISION DE BAÑO BATIENTE(MANIJA, CERRADURA)(+$142.797)</option>
+                    <option id="kitPesado" value="385431" data-nombre="KIT CORREDIZO PESADO">KIT CORREDIZO PESADO(+$385.431)</option>
+                    <option id="kitMediano" value="274534" data-nombre="KIT CORREDIZO MEDIANO">KIT CORREDIZO MEDIANO(+$274.354)</option>
+                    <option value="278250" data-nombre="KIT Plegable">KIT Plegable(+$278.250)</option>
+                </select>
+            </div>
+            <div class="column">
+                <label for="cantidadKitsP">Cantidad rodamientos:</label>
+            </div>
+            <div class="column">
+                <select id="Rodamientos">
+                    <option value="0">Ninguno</option>
+                    <option id="costoKitRodamientoP" value="166950" data-nombre="cantidadKitsPesado">rodamientoPesado(+$166.950)</option>
+                    <option id="costoKitRodamientoM" value="89040" data-nombre="cantidadKitsMediano">rodamientoMediano(+$89.040)</option>
+                </select>
+            </div>
+        </div>
+
+        <br>
+
+<div class="container" id="etiqueta16" onclick="cambiarColor('etiqueta16')">
+            <div class="column">
+                <label for="adicional">(Valor adicional):</label>
+            </div>
+            <div class="column">
+                <input type="number" id="adicional" value="0"  step="0.01">
+            </div>    
+        </div>
+        
+        <br>
+        
+<div class="container" id="etiquetaAccesorios17" onclick="cambiarColor('etiquetaAccesorios17')">
+            <div class="column" >
+                   <label for="tipoAccesorios">Tipo de Accesorios</label>
+            </div>
+                 <div class="column" >
+                    <select id="tipoAccesorios">
+              <option  data-nombre="ACERO INOXIDABLE SS304 SATINADO">ACERO INOXIDABLE SS304 SATINADO </option>
+              <option  data-nombre="ALUMINIO COLOR BLANCO MATE">ALUMINIO COLOR BLANCO MATE</option> 
+              <option id="marcoPg_" value="45000" data-nombre="insonoro">Marco PARA PUERTAS GRANDES _ (+$45.000)</option>         
+            </select>
+                 </div>
+              </div>
+
+ <br>
+
+ <div class="container" id="etiqueta18" onclick="cambiarColor('etiqueta18')">
+    <div class="column">
+        <label for="Marco">MarcoSuperior</label>
+    </div>  
+    <div class="column">
+        <select id="Marco">
+            <option value="0">Ninguno</option>
+           <option value="20000" data-nombre="insonoro">PF(+$20.000)</option>
+            <option value="30000" data-nombre="proyectante">Marco proyectante SUPERIOR |(+$30.000)</option>
+            <option value="40000" data-nombre="insonoro">Marco Insonoro SUPERIOR | (+$40.000)</option>
+            <option id="marcoPg" value="45000" data-nombre="insonoro">Marco PARA PUERTAS GRANDES| (+$45.000)
+<option id="marcoPg" value="50000" data-nombre="insonoro">Marco PARA PUERTAS GRANDES| (+$50.000)</option>
+        </select>
+    </div>
+        <div class="column">
+            <label for="cantidadMarco">Cantidad:</label>
+        </div>
+        <div class="column">
+            <input type="number" id="cantidadMarco" value="1" min="1">
+        </div>
+ </div>
+<br>
+
+<div class="container" id="etiqueta19" onclick="cambiarColor('etiqueta19')">
+    <div class="column">
+        <label for="MarcoI">MarcoInferior</label>
+    </div>  
+    <div class="column">
+        <select id="MarcoI">
+            <option value="0">Ninguno</option>
+            <option value="20000" data-nombre="insonoro">PF(+$20.000)</option>
+            <option value="30000" data-nombre="proyectante">Marco proyectante Inferior --(+$30.000)</option>
+            <option value="40000" data-nombre="insonoro">Marco Insonoro Inferior --(+$40.000)</option>
+            <option value="45000" data-nombre="insonoro">Marco Insonoro Inferior --(+$45.000)</option>
+<option value="50000" data-nombre="insonoro">Marco Insonoro Inferior --(+$50.000)</option>
+        </select>
+    </div>
+        <div class="column">
+            <label for="cantidadMarcoI">Cantidad:</label>
+        </div>
+        <div class="column">
+            <input type="number" id="cantidadMarcoI" value="1" min="1">
+        </div>
+   
+</div>
+<br>
+
+    </div>
+      <br>
+
+
+      
+
+<!-- resultado                     -->
+ 
+
+<!-- -----------------------------------------------imagen ------------------------    -->
+<br>
+<div class="column3">
+    <br>
+<button type="button" onclick="calcularValor()">Calcular Total</button>       
+    <br>
+<div class="rsI">
+    <div id="resultado"></div>
+<div class="bIma">
+    <img id="imagen" src="" alt="Imagen dinámica">
+</div>
+
+<br>
+</div>
+
+    <br>
+    
+<div class="container">
+    <div class="column">
+        <label for="porcentaje">UTILIDAD</label>
+    </div>
+    <div class="column">
+        <input type="number" id="porcentaje" min="0" step="0.01">
+    </div>
+    <button onclick="aplicarPorcentaje()">Aplicar Porcentaje</button>
+</div>
+
+<br>
+
+   <div id="resultadoPorcentaje"></div>
+    <h1>UTILIDAD</h1>
+
+<br>
+
+<style>
+    
+</style>
+<form action="">
+    <div class="container">
+    <div class="column">
+        <label for="instalacion">INSTALACION</label>
+    </div>
+    <div class="column">
+
+        <select id="instalacion">
+            <option value="0">Ninguno</option>
+            <option value="25000">Instalacion m2(+$25.000)</option>
+            <option value="50000">Instalacion m2(+$50.000)</option>
+            <option value="75000">Instalacion m2(+$75.000)</option>
+            <option value="85000">Instalacion m2(+$85.000<-)</option>
+            <option value="100000">Instalacion m2(+$100.000)</option>
+            <option value="120000">Instalacion m2(+$120.000)</option>
+            <option value="150000">Instalacion m2(+$150.000)</option>
+            <option value="200000">Instalacion m2(+$200.000)</option>
+            <option value="250000">Instalacion m2(+$250.000)</option>
+            <option value="300000">Instalacion m2(+$300.000)</option>
+        </select>
+    </div> 
+    <button type="button" onclick="calcularInta()">Calcular instalacion</button>
+  </div>
+    </form>
+    <div id="resultadoI"></div> 
+    
+    <form action="">
+        <div class="container">
+        <div class="column">
+            <label for="Transporte">TOTAL CON TRANSPORTE</label>
+        </div>
+        <div class="column">
+    
+            <select id="transporte">
+                <option value="0">Ninguno</option>
+                <option value="5000">5.000</option>
+                <option value="7000">7.000</option>
+                <option value="10000">10.000</option>
+                <option value="20000">20.000</option>
+                <option value="25000">25.000</option>
+                <option value="30000">30.000</option>
+                <option value="40000">40.000</option>
+                <option value="80000">80.000</option>
+                <option value="100000">100.000</option>
+                <option value="150000">150.000</option>
+                <option value="200000">200.000</option>
+                <option value="250000">250.000</option>
+                <option value="300000">300.000</option>
+
+            </select>
+        </div> 
+        <button type="button" onclick="calcularTotal()">Calcular TOTAL</button>
+      </div>
+        </form>
+    <br> 
+
+    <h1>VENTA TOTAL</h1>
+    <div id="VTV"></div> 
+   
+    </div>
+    <br>
+   <!--  -->
+    <div class="container" >
+            <div class="column">
+                <label for="ValorADICIONAL">(Costo adicional):</label>
+            </div>
+            <div class="column">
+                <input type="number" id="CostoAdicional" value="0"  step="0.01">
+            </div>    
+        </div>
+   <div class="column2">
+    
+    <div class="container"  id="etiqueta20" onclick="cambiarColor('etiqueta20')">
+        <div class="column" >
+               <label for="costoEstandar">costo </label>
+        </div>
+
+             <div class="column" >
+                <p style="color:rgb(216, 40, 40)">ACERO</p> <p style="color:rgb(70, 210, 196)">ALUMINIO</p>  <p style="color:rgb(178, 40, 216)">OTROS</p>
+                <select id="costoEstandar">
+                 
+    <!-- puerta de una hoja *-->
+                   <option value="0" style="color:blue">UNA HOJA</option>
+                    <option id="pD6CAluminioSencilla" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 6mm BATIENTE, con bisagras, manija agarradera de 40cm, pasador de sobreponer</option>
+    
+                    <option id="pD8CAluminio" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE, con chapetas de giro, manija agarradera de 40cm(ALUMINIO)</option>
+                    <option id="pD8CAluminioBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE, con chapetas de giro, manija agarradera de 40cm, bisagra hidraulica(ALUMINIO)</option>
+                    <option id="pD8CAluminioBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE, con chapetas de giro, manija agarradera de 40cm, bisagra hidraulica speedy(ALUMINIO)</option>
+                    <option id="pD8CAluminioChapa" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE, con chapetas de giro, manija agarradera de 40cm, cerradura de seguridad en aluminio(ALUMINIO)</option>
+                    <option id="pD8CAluminioChapaBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE, con chapetas de giro, manija agarradera de 40cm, cerradura de seguridad en aluminio, bisagra hidraulica(ALUMINIO)</option>
+                    <option id="pD8CAluminioChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE, con chapetas de giro, manija agarradera de 40cm, cerradura de seguridad en aluminio, bisagra hidraulica speedy(ALUMINIO)</option>
+
+                    <option id="pD8CAcero" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE, con chapetas de giro, manija agarradera de 40cm acero</option>
+                    <option id="pD8CAceroBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE, con chapetas de giro, manija agarradera de 40cm acero, bisagra hidraulica </option>
+                    <option id="pD8CAceroBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE, con chapetas de giro, manija agarradera de 40cm acero, bisagra hidraulica Speedy</option>
+                    <option id="pD8CAceroChapa" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero</option>
+                    <option id="pD8CAceroChapaBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, bisagra hidraulica</option>
+                    <option id="pD8CAceroChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, bisagra hidraulica Speedy</option>
+
+                    <option id="pD10CAluminio" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE, con chapetas de giro, manija agarradera de 40cm(ALUMINIO)</option>
+                    <option id="pD10CAluminioBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE, con chapetas de giro, manija agarradera de 40cm, bisagra hidraulica(ALUMINIO)</option>
+                    <option id="pD10CAluminioBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE, con chapetas de giro, manija agarradera de 40cm, bisagra hidraulica speedy(ALUMINIO)</option>
+                    <option id="pD10CAluminioChapa" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE, con chapetas de giro, manija agarradera de 40cm, cerradura de seguridad en aluminio(ALUMINIO)</option>
+                    <option id="pD10CAluminioChapaBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE, con chapetas de giro, manija agarradera de 40cm, cerradura de seguridad en aluminio, bisagra hidraulica(ALUMINIO)</option>
+                    <option id="pD10CAluminioChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE, con chapetas de giro, manija agarradera de 40cm, cerradura de seguridad en aluminio, bisagra hidraulica speedy(ALUMINIO)</option>
+
+                    <option id="pD10CAcero" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con chapetas de giro, manija agarradera de 40cm</option>
+                    <option id="pD10CAceroBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con chapetas de giro, manija agarradera de 40cm, bisagra hidraulica</option>
+                    <option id="pD10CAceroBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con chapetas de giro, manija agarradera de 40cm, bisagra hidraulica speedy</option>
+                    <option id="pD10CAceroChapa" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero</option>
+                    <option id="pD10CAceroChapaBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, bisagra hidraulica </option>
+                    <option id="pD10CAceroChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, bisagra hidraulica speedy</option>
+
+                    <option id="pD10CAceroPoste" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con poste de giro, manija agarradera de 40cm</option>
+                    <option id="pD10CAceroPosteBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con poste de giro, manija agarradera de 40cm, bisagra hidraulica </option>
+                    <option id="pD10CAceroPosteBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con poste de giro, manija agarradera de 40cm, bisagra hidraulica speedy</option>
+                    <option id="pD10CAceroPosteChapa" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con poste de giro, manija agarradera de 40cm, cerrradura de seguridad en acero,</option>
+                    <option id="pD10CAceroPosteChapaBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con poste de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, bisagra hidraulica </option>
+                    <option id="pD10CAceroPosteChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con poste de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, bisagra hidraulica speedy</option>
+
+                    <option id="pD10CAceroPosteManija60cm" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con poste de giro, manija agarradera de 60cm</option>
+                    <option id="pD10CAceroPosteManija60cmBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con poste de giro, manija agarradera de 60cm,  bisagra hidraulica</option>
+                    <option id="pD10CAceroPosteManija60cmBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con poste de giro, manija agarradera de 60cm, bisagra hidraulica speedy</option>
+                    <option id="pD10CAceroPosteManija60cmChapa" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con poste de giro, manija agarradera de 60cm, cerrradura de seguridad en acero,</option>
+                    <option id="pD10CAceroPosteManija60cmChapaBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con poste de giro, manija agarradera de 60cm, cerrradura de seguridad en acero, bisagra hidraulica </option>
+                    <option id="pD10CAceroPosteManija60cmChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE, con poste de giro, manija agarradera de 60cm, cerrradura de seguridad en acero, bisagra hidraulica speedy</option>
+
+                    <!-- puerta de una hoja con modulos fijos * -->
+                    <option value="0" style="color:blue">PUERTA DE UNA HOJA CON MODULOS FIJOS</option>
+                     <option id="pD8CAluminioMF" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, perfilf fijo(ALUMINIO) </option>
+                     <option id="pD8CAluminioMFBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, perfilf fijo  bisagra hidraulica(ALUMINIO)</option>
+                     <option id="pD8CAluminioMFBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, perfilf fijo, bisagra hidraulica speedy(ALUMINIO) </option>
+                     <option id="pD8CAluminioMFChapa" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, cerradura de seguridad en aluminio, perfilf fijo(ALUMINIO) </option>
+                     <option id="pD8CAluminioMFChapaBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, cerradura de seguridad en aluminio, perfilf fijo, bisagra hidraulica(ALUMINIO)</option>
+                     <option id="pD8CAluminioMFChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, cerradura de seguridad en aluminio, perfilf fijo, bisagra hidraulica speedy(ALUMINIO)</option>
+
+                     <option id="pD8CAceroMF" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, puntos fijos</option>
+                     <option id="pD8CAceroMFBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, puntos fijos, bisagra hidraulica </option>
+                     <option id="pD8CAceroMFBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, puntos fijos, bisagra hidraulica speedy</option>
+                     <option id="pD8CAceroMFChapa" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, puntos fijos</option>
+                     <option id="pD8CAceroMFChapaBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, puntos fijos, bisagra hidraulica</option>
+                     <option id="pD8CAceroMFChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, puntos fijos, bisagra hidraulica speedy</option>
+                     
+                     <option id="pD10CAluminioMF" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, perfilf fijo(ALUMINIO)</option>
+                     <option id="pD10CAluminioMFBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, perfilf fijo, bisagra hidraulica (ALUMINIO)</option>
+                     <option id="pD10CAluminioMFBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, perfilf fijo, bisagra hidraulica speedy(ALUMINIO)</option>
+                     <option id="pD10CAluminioMFChapa" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, perfilf fijo(ALUMINIO)</option>
+                     <option id="pD10CAluminioMFChapaBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, perfilf fijo, bisagra hidraulica(ALUMINIO)</option>
+                     <option id="pD10CAluminioMFChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, perfilf fijo, bisagra hidraulica speedy(ALUMINIO)</option>
+                
+                     <option id="pD10CAceroMF" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, puntos fijos</option>
+                     <option id="pD10CAceroMFBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, puntos fijos, bisagra hidraulica </option>
+                     <option id="pD10CAceroMFBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, puntos fijos, bisagra hidraulica speedy</option>
+                     <option id="pD10CAceroMFChapa" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, puntos fijos</option>
+                     <option id="pD10CAceroMFChapaBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, puntos fijos, bisagra hidraulica</option>
+                     <option id="pD10CAceroMFChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MF, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, puntos fijos, bisagra hidraulica speedy</option>
+
+                     <option id="pD10CAceroMFPoste" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MF, con poste de giro, manija agarradera de 40cm, puntos fijos</option>
+                     <option id="pD10CAceroMFPosteBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MF, con poste de giro, manija agarradera de 40cm, puntos fijos, bisagra hidraulica </option>
+                     <option id="pD10CAceroMFPosteBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MF, con poste de giro, manija agarradera de 40cm, puntos fijos, bisagra hidraulica speedy</option>
+                     <option id="pD10CAceroMFPosteChapa" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MF, con poste de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, puntos fijos</option>
+                     <option id="pD10CAceroMFPosteChapaBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MF, con poste de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, puntos fijos, bisagra hidraulica</option>
+                     <option id="pD10CAceroMFPosteChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MF, con poste de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, puntos fijos, bisagra hidraulica speedy</option>
+                     
+                     <option id="pD10CAceroMFPosteManija60cm" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE  MF, con poste de giro, manija agarradera de 60cm,</option>
+                     <option id="pD10CAceroMFPosteManija60cmBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE  MF, con poste de giro, manija agarradera de 60cm, bisagra hidraulica </option>
+                     <option id="pD10CAceroMFPosteManija60cmBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE  MF, con poste de giro, manija agarradera de 60cm, bisagra hidraulica speedy</option>
+                    <option id="pD10CAceroMFPosteManija60cmChapa" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE  MF, con poste de giro, manija agarradera de 60cm, cerrradura de seguridad en acero,</option>
+                    <option id="pD10CAceroMFPosteManija60cmChapaBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE MF, con poste de giro, manija agarradera de 60cm, cerrradura de seguridad en acero, puntos fijos, bisagra hidraulica </option>
+                    <option id="pD10CAceroMFPosteManija60cmChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE MF, con poste de giro, manija agarradera de 60cm, cerrradura de seguridad en acero, puntos fijos, bisagra hidraulica speedy</option>
+
+                    <!-- puertas dobles -->
+                    <option value="0" style="color:blue">PUERTA DOBLE</option>
+                    <option id="pD6CAluminioSencillaDoble" value="0" data-nombre="">Puerta de vidrio templado doble 6mm BATIENTE, con bisagras, manija agarradera de 40cm, pasador de sobreponer</option>
+    
+                    <option id="pD8CAluminioDoble" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado doble 8mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, pasador de piso(ALUMINIO)</option>
+                    <option id="pD8CAluminioDobleBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado doble 8mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, pasador de piso, bisagra hidraulica(ALUMINIO)</option>
+                    <option id="pD8CAluminioDobleBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado doble 8mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, pasador de piso, bisagra hidraulica speedy(ALUMINIO)</option>
+                    <option id="pD8CAluminioDobleChapa" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado doble 8mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, cerradura de seguridad en aluminio, pasador de piso(ALUMINIO)</option>
+                    <option id="pD8CAluminioDobleChapaBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado doble 8mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, cerradura de seguridad en aluminio, pasador de piso bisagra hidraulica(ALUMINIO)</option>
+                    <option id="pD8CAluminioDobleChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado doble 8mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, cerradura de seguridad en aluminio, pasador de piso, bisagra hidraulica speedy(ALUMINIO)</option>
+
+                    <option id="pD8CAceroDoble" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 8mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, pasador de piso</option>
+                    <option id="pD8CAceroDobleBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 8mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, pasador de piso, bisagra hidraulica </option>
+                    <option id="pD8CAceroDobleBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 8mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, pasador de piso, bisagra hidraulica speedy</option>
+                    <option id="pD8CAceroDobleChapa" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 8mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, cerradura de seguridad en acero, pasador de piso</option>
+                    <option id="pD8CAceroDobleChapaBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 8mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, cerradura de seguridad en acero, pasador de piso bisagra hidraulica</option>
+                    <option id="pD8CAceroDobleChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 8mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, cerradura de seguridad en acero, pasador de piso bisagra hidraulica speedy</option>
+
+                    <option id="pD10CAluminioDoble" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado doble 10mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, en aluminio, pasador de piso(ALUMINIO)</option>
+                    <option id="pD10CAluminioDobleBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado doble 10mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, en aluminio, pasador de piso, bisagra hidraulica(ALUMINIO) </option>
+                    <option id="pD10CAluminioDobleBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado doble 10mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, en aluminio, pasador de piso, bisagra hidraulica speedy(ALUMINIO)</option>
+                    <option id="pD10CAluminioDobleChapa" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado doble 10mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, cerradura de seguridad en aluminio, pasador de piso(ALUMINIO)</option>
+                    <option id="pD10CAluminioDobleChapaBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado doble 10mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, cerradura de seguridad en aluminio, pasador de piso bisagra hidraulica(ALUMINIO)</option>
+                    <option id="pD10CAluminioDobleChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado doble 10mm BATIENTE, con chapetas de giro, manijas agarradera de 40cm, cerradura de seguridad en aluminio, pasador de piso bisagra hidraulica speedy(ALUMINIO)</option>
+
+                    <option id="pD10CAceroDoble" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 10m BATIENTE, con chapetas de giro, manijas agarradera de 40cm, pasador de piso </option>
+                    <option id="pD10CAceroDobleBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 10m BATIENTE, con chapetas de giro, manijas agarradera de 40cm, pasador de piso, bisagra hidraulica </option>
+                    <option id="pD10CAceroDobleBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 10m BATIENTE, con chapetas de giro, manijas agarradera de 40cm, pasador de piso, bisagra hidraulica speedy </option>
+                    <option id="pD10CAceroDobleChapa" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 10m BATIENTE, con chapetas de giro, manijas agarradera de 40cm, cerrradura de seguridad en acero, pasador de piso</option>
+                    <option id="pD10CAceroDobleChapaBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 10m BATIENTE, con chapetas de giro, manijas agarradera de 40cm, cerrradura de seguridad en acero, pasador de piso bisagra hidraulica</option>
+                    <option id="pD10CAceroDobleChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 10m BATIENTE, con chapetas de giro, manijas agarradera de 40cm, cerrradura de seguridad en acero, pasador de piso bisagra hidraulica speedy</option>
+
+                    <option id="pD10CAceroDoblePoste" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 10m BATIENTE, con postes de giro, manijas agarradera de 40cm, pasador de piso</option>
+                    <option id="pD10CAceroDoblePosteBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 10m BATIENTE, con postes de giro, manijas agarradera de 40cm, pasador de piso, bisagra hidraulica</option>
+                    <option id="pD10CAceroDoblePosteBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 10m BATIENTE, con postes de giro, manijas agarradera de 40cm, pasador de piso, bisagra hidraulica speedy</option>
+                    <option id="pD10CAceroDoblePosteChapa" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 10m BATIENTE, con postes de giro, manijas agarradera de 40cm, cerrradura de seguridad en acero, pasador de piso</option>
+                    <option id="pD10CAceroDoblePosteChapaBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 10m BATIENTE, con postes de giro, manijas agarradera de 40cm, cerrradura de seguridad en acero, pasador de piso,  bisagra hidraulica</option>
+                    <option id="pD10CAceroDoblePosteChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble 10m BATIENTE, con postes de giro, manijas agarradera de 40cm, cerrradura de seguridad en acero, pasador de piso bisagra hidraulica speedy</option>
+
+                    <option id="pD10CAceroPosteDobleBhSpeedyManija1" value="0" data-nombre="">Puerta de vidrio templado doble 10m BATIENTE, con postes de giro, manijas agarradera de 1METRO, pasador de piso, bisagra hidraulica speedy, ACERO</option>
+                    <option id="pD5_5CAceroDoblePosteChapa" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado doble Laminado5+5mm BATIENTE, con postes de giro, manijas agarradera de 40cm, cerrradura de seguridad en acero, pasador de piso</option>
+                
+
+                    <!-- puerta con modulo abatible * -->
+                 <option value="0" style="color:blue">puerta con modulo abatible</option>
+                 <option id="pD8CAluminioMA" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE MA, con chapetas de giro, manijas agarradera de 40cm,pasador(ALUMINIO) </option>
+                 <option id="pD8CAluminioMABh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE MA, con chapetas de giro, manijas agarradera de 40cm,pasador, bisagra hidraulica(ALUMINIO) </option>
+                 <option id="pD8CAluminioMABhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE MA, con chapetas de giro, manijas agarradera de 40cm, pasador, bisagra hidraulica speed(ALUMINIO)y</option>
+                 <option id="pD8CAluminioMAChapa" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, cerradura de seguridad en aluminio, pasador(ALUMINIO) </option>
+                 <option id="pD8CAluminioMAChapaBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, cerradura de seguridad en aluminio, pasador, bisagra hidraulica(ALUMINIO)</option>
+                 <option id="pD8CAluminioMAChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, cerradura de seguridad en aluminio, pasador, bisagra hidraulica speedy(ALUMINIO)</option>
+
+                 <option id="pD8CAceroMA" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, pasador</option>
+                 <option id="pD8CAceroMABh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, pasador, bisagra hidraulica</option>
+                 <option id="pD8CAceroMABhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, pasador, bisagra hidraulica speedy</option>
+                 <option id="pD8CAceroMAChapa" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, pasador</option>
+                 <option id="pD8CAceroMAChapaBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, pasador, bisagra hidraulica</option>
+                 <option id="pD8CAceroMAChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, pasador, bisagra hidraulica speedy</option>
+
+                 <option id="pD10CAluminioMA" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, pasador(ALUMINIO)</option>
+                 <option id="pD10CAluminioMABh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, pasador, bisagra hidraulica(ALUMINIO)</option>
+                 <option id="pD10CAluminioMABhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, pasador, bisagra hidraulica speedy(ALUMINIO)</option>
+                 <option id="pD10CAluminioMAChapa" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, pasadors(ALUMINIO)</option>
+                 <option id="pD10CAluminioMAChapaBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, pasador, bisagra hidraulica(ALUMINIO)</option>
+                 <option id="pD10CAluminioMAChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, pasador, bisagra hidraulica speedy(ALUMINIO)</option>
+            
+                 <option id="pD10CAceroMA" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, pasador</option>
+                 <option id="pD10CAceroMABh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MA,con chapetas de giro , manija agarradera de 40cm, pasador, bisagra hidraulica</option>
+                 <option id="pD10CAceroMABhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, pasador, bisagra hidraulica speedy</option>
+                 <option id="pD10CAceroMAChapa" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MA, con chapetas de giro, manija agarradera de 40cm, cerrradura de seguridad en acero, pasador</option>
+                 <option id="pD10CAceroMAChapaBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MA,con chapetas de giro , manija agarradera de 40cm, cerrradura de seguridad en acero, pasador, bisagra hidraulica</option>
+                 <option id="pD10CAceroMAChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE MA,con chapetas de giro , manija agarradera de 40cm, cerrradura de seguridad en acero, pasador, bisagra hidraulica speedy</option>
+                 
+            
+  <!-- puerta doble con modulos fijos -->
+  <option value="0" style="color:blue">PUERTA DOBLE con modulos fijos</option>
+  <option id="pD8CAluminioMFDoble" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, perfilf fijo (ALUMINIO)</option> 
+  <option id="pD8CAluminioMFDobleBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, perfilf fijo, bisagra hidraulica (ALUMINIO)</option> 
+  <option id="pD8CAluminioMFDobleBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, perfilf fijo, bisagra hidraulica speedy(ALUMINIO)</option> 
+  <option id="pD8CAluminioMFDobleChapa" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, cerradura de seguridad en aluminio, perfilf fijo (ALUMINIO)</option>          
+  <option id="pD8CAluminioMFDobleChapaBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, cerradura de seguridad en aluminio, perfilf fijo, bisagra hidraulica(ALUMINIO)</option>
+  <option id="pD8CAluminioMFDobleChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 8mm BATIENTE MF, con chapetas de giro, manijas agarradera de 40cm, cerradura de seguridad en aluminio, perfilf fijo, bisagra hidraulica speedy(ALUMINIO)</option>
+  
+  <option id="pD8CAceroMFDoble" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, puntos fijos</option>  
+  <option id="pD8CAceroMFDobleBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, puntos fijos, bisagra hidraulica</option>  
+  <option id="pD8CAceroMFDobleBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, puntos fijos, bisagra hidraulica speedy</option>  
+  <option id="pD8CAceroMFDobleChapa" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, cerrradura de seguridad en acero, puntos fijos</option> 
+  <option id="pD8CAceroMFDobleChapaBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, cerrradura de seguridad en acero, puntos fijos, bisagra hidraulica</option>
+  <option id="pD8CAceroMFDobleChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 8mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, cerrradura de seguridad en acero, puntos fijos, bisagra hidraulica speedy</option>
+
+  <option id="pD10CAluminioMFDoble" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, perfilf fijo(ALUMINIO)</option>
+  <option id="pD10CAluminioMFDobleBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, perfilf fijo, bisagra hidraulica(ALUMINIO)</option>
+  <option id="pD10CAluminioMFDobleBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, perfilf fijo, bisagra hidraulica speedy(ALUMINIO)</option>
+  <option id="pD10CAluminioMFDobleChapa" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, cerrradura de seguridad, perfilf fijo(ALUMINIO)</option> 
+  <option id="pD10CAluminioMFDobleChapaBh" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, cerrradura de seguridad, perfilf fijo, bisagra hidraulica(ALUMINIO)</option>
+  <option id="pD10CAluminioMFDobleChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(70, 210, 196)">Puerta de vidrio templado 10mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, cerrradura de seguridad,  perfilf fijo, bisagra hidraulica speedy(ALUMINIO)</option>
+                     
+  <option id="pD10CAceroMFDoble" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, puntos fijos</option>  
+  <option id="pD10CAceroMFDobleBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, puntos fijos, bisagra hidraulica</option>  
+  <option id="pD10CAceroMFDobleBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, puntos fijos, bisagra hidraulica speedy</option>  
+  <option id="pD10CAceroMFDobleChapa" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, cerrradura de seguridad en acero, puntos fijos</option>  
+  <option id="pD10CAceroMFDobleChapaBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, cerrradura de seguridad en acero, puntos fijos, bisagra hidraulica</option>
+  <option id="pD10CAceroMFDobleChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 40cm, cerrradura de seguridad en acero, puntos fijos, bisagra hidraulica speedy</option>
+                  
+ <option id="pD10CAceroMFDoblePoste" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE Doble MFs, con poste de giro, manijas agarradera de 60cm,puntos fijos</option>
+ <option id="pD10CAceroMFDoblePosteBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE Doble MFs, con poste de giro, manijas agarradera de 60cm,puntos fijos, bisagra hidraulica</option>
+ <option id="pD10CAceroMFDoblePosteBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE Doble MFs, con poste de giro, manijas agarradera de 60cm,puntos fijos, bisagra hidraulica speedy</option>
+ <option id="pD10CAceroMFDoblePosteChapa" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE Doble MFs, con poste de giro, manijas agarradera de 60cm, cerrradura de seguridad en acero,</option>
+ <option id="pD10CAceroMFDoblePosteChapaBh" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE Doble MFs, con poste de giro, manijas agarradera de 60cm, cerrradura de seguridad en acero, puntos fijos, bisagra hidraulica </option>
+ <option id="pD10CAceroMFDoblePosteChapaBhSpeedy" value="0" data-nombre="" style="color:rgb(216, 40, 40)">Puerta de vidrio templado 10m BATIENTE Doble MFs, con poste de giro, manijas agarradera de 60cm, cerrradura de seguridad en acero, puntos fijos, bisagra hidraulica speedy</option>
+(<!-- OTROS -->)
+<option id="pD10CAceroMFDobleOtros" value="0" data-nombre="" style="color:rgb(178, 40, 216)">Puerta de vidrio templado 10mm BATIENTE Doble MFs, con chapetas de giro, manijas agarradera de 60cm, puntos fijos, 2 PASADORES</option> 
+
+
+ <option value="0" style="color:blue">PUERTA CORREDIZA</option>
+                    <!-- PUERTA CORREDIZA -->
+                    
+                    <option style="color:rgb(70, 210, 196)" id="pD8CorredizaKitmedianoAluminio" value="0" data-nombre="">Puerta de vidrio templado 8mm CORREDIZA, KIT CORREDIZO mediano, manija agarraderas de 40cm, cerrradura de seguridad (ALUMINIO)</option>
+                    <option style="color:rgb(70, 210, 196)" id="pD8CorredizaKitpesadoAluminio" value="0" data-nombre="">Puerta de vidrio templado 8mm CORREDIZA, KIT CORREDIZO pesado, manija agarraderas de 40cm, cerrradura de seguridad(ALUMINIO) </option>
+                   
+                    <option style="color:rgb(216, 40, 40)" id="pD8CorredizaKitmedianoAcero" value="0" data-nombre="">Puerta de vidrio templado 8mm CORREDIZA, KIT CORREDIZO mediano, manija agarraderas de 40cm, cerrradura de seguridad </option>
+                    <option style="color:rgb(216, 40, 40)" id="pD8CorredizaKitpesadoAcero" value="0" data-nombre="">Puerta de vidrio templado 8mm CORREDIZA, KIT CORREDIZO pesado, manija agarraderas de 40cm, cerrradura de seguridad </option>
+
+                    <!-- PUERTA CORREDIZA CON FIJOS del mismo vidrio -->
+                    <option value="0" style="color:blue">PUERTA CORREDIZA CON MODULOS fijoS mismo vidrio</option>
+                    <option style="color:rgb(70, 210, 196)" id="pD8AluminioCorredizaConModulosFijos" value="0" data-nombre="">Puerta de vidrio templado 8mm CORREDIZA CON MODULOS FIJOS, KIT CORREDIZO mediano, manija agarraderas de 40cm, cerrradura de seguridad en aluminio,(ALUMINIO) </option>
+                    
+              <!-- PUERTA CORREDIZA CON FIJOS de diferente vidrio -->
+              <option value="0" style="color:blue">PUERTA CORREDIZA CON MODULOS fijoS de diferente vidrio</option>
+              <option style="color:rgb(70, 210, 196)" id="pD10y8AceroCorredizaConModulosFijos" value="0" data-nombre="">Puerta de vidrio templado 10m y 8mm CORREDIZA CON MODULOS FIJOS, KIT CORREDIZO mediano, manija agarraderas de 40cm, cerrradura de seguridad en aluminio, </option>
+                     
+
+                <!-- PUERTA CORREDIZA DOBLE CON FIJOS -->
+                    <option value="0" style="color:blue">PUERTA DOBLE corredia con modulos fijos de diferente vidrio</option>
+
+                    <option id="pD10y8AceroCorredizaDobleConModulosFijos" value="0" data-nombre="">Puerta de vidrio templado 10m y 8mm CORREDIZA DOBLE CON MODULOS FIJOS, KIT CORREDIZO PESADO, manijas agarraderas de 40cm, cerrradura de seguridad en acero, pasador de piso</option>
+                    <option style="color:rgb(70, 210, 196)"  id="pD10y8AluminioCorredizaConModulosFijos" value="0" data-nombre="">Puerta de vidrio templado 10m y 8mm CORREDIZA DOBLE CON MODULOS FIJOS, KIT CORREDIZO PESADO, manijas agarraderas de 40cm, cerrradura de seguridad en acero, pasador de piso</option>
+<!-- Puerta Automatica Corrediza -->
+<option value="0" style="color:blue">PUERTA  AUTOMATICA CORREDIZA</option>
+<option id="pSA2Corrediza8" value="0" data-nombre="">Puerta de SA corrediza de 8mm, de 2metros</option>
+<option id="pSA2Corrediza10" value="0" data-nombre="">Puerta de SA corrediza de 10mm, de 2metros </option>                  
+<option id="pSA4Corrediza8" value="0" data-nombre="">Puerta de SA corrediza de 8mm, de 4metros, DOS HOJAS </option>  
+
+
+<option id="pSA4Corrediza5_5" value="0" data-nombre="">Puerta de SA corrediza de 5+5mm, de 4metros, DOS HOJAS </option>  
+                    <!--DIVISION FIJA  -->
+                    <option value="0" style="color:blue">DIVISIONES</option>
+
+                    <option id="dD8Acero" value="0" data-nombre="">Division en 8mm, con puntos fijos en acero - NORMAL(5.2M ANCHO a 2.4ALTO)</option>
+                    <option id="dD8Aluminio" value="0" data-nombre="">Division en 8mm, con perfiles fijos - NORMAL(1 a 2.4)</option>
+                    <option id="dD10Acero" value="0" data-nombre="">Division en 10mm, con puntos fijos en acero - NORMAL(1cada hoja a 2.5ALTO)</option>
+                    <option id="dD10AceroGrande" value="0" data-nombre="">Division en 10mm, con puntos fijos en acero - Grande(1.2Mcada hoja ANCHO a 3ALTO)</option>
+                   
+                   
+                    <!-- Cerramiento -->
+                   <option id="ceD8AluminioPg" value="0" data-nombre="">Cerramiento en 8mm, con marco monumental</option>
+                </select>
+               
+               
+                </div>    
+    
+                <script>
+                    $(document).ready(function() {
+        $('#costoEstandar').select2();
+    }); 
+                </script>    
+          </div>
+    <br>
+<button type="button" onclick="calcularCostoE()">Calcular Total Costo Estandar</button>       
+    <br>
+<div class="rsI">
+    <div id="resultadoC"></div>
+<br> 
+<div class="container">
+    <div class="column">
+        <label for="porcentajeC">UTILIDAD COSTO</label>
+    </div>
+    <div class="column">
+        <input type="number" id="porcentajeC" min="0" step="0.01">
+    </div>
+    <button onclick="aplicarPorcentajeC()">Aplicar Porcentaje</button>
+</div>
+
+   <div id="resultadoPorcentajeC"></div>
+
+</div>
+<br>
+<div class="container" >
+    <div class="column">
+        <label for="Pelicula">Pelicula</label>
+    </div>
+    <div class="column">
+        <select id="pelicula">
+            <option value="0" >Ninguno</option>
+            <option value="53800" data-nombre="Pelicula">Pelicula (+$53.800)</option>
+            <option value="75000" data-nombre="Pelicula">Pelicula (+$75.000)</option>
+        </select>
+    </div>
+  
+     </div>
+    
+
+<br>
+<form action="">
+    <div class="container">
+    <div class="column">
+        <label for="instalacionC">INSTALACION C</label>
+    </div>
+    <div class="column">
+
+        <select id="instalacionCosto">
+            <option value="0">Ninguno</option>
+            <option value="25000">Instalacion m2(+$25.000)</option>
+            <option value="50000">Instalacion m2(+$50.000)</option>
+            <option value="75000">Instalacion m2(+$75.000)</option>
+            <option value="85000">Instalacion m2(+$85.000<-)</option>
+            <option value="100000">Instalacion m2(+$100.000)</option>
+            <option value="120000">Instalacion m2(+$120.000)</option>
+            <option value="120000">Instalacion m2 DE TODO EL SA con Mf(+$146.875)</option>
+            <option value="150000">Instalacion m2(+$150.000)</option>
+            <option value="200000">Instalacion m2(+$200.000)</option>
+            <option value="250000">Instalacion m2 tambien para SA completo(+$250.000)</option>
+            <option value="300000">Instalacion m2(+$300.000)</option>
+        </select>
+    </div> 
+    <button type="button" onclick="calcularInstaC()">Calcular instalacion</button>
+  </div>
+    </form>
+    <div id="resultadoIC"></div> 
+    
+    <form action="">
+        <div class="container">
+        <div class="column">
+            <label for="transporteC">TOTAL CON TRANSPORTE</label>
+        </div>
+        <div class="column">
+    
+            <select id="transporteC">
+                <option value="0">Ninguno</option>
+                <option value="5000">5.000</option>
+                <option value="7000">7.000</option>
+                <option value="10000">10.000</option>
+                <option value="20000">20.000</option>
+                <option value="25000">25.000</option>
+                <option value="30000">30.000</option>
+                <option value="40000">40.000</option>
+                <option value="80000">80.000</option>
+                <option value="100000">100.000</option>
+                <option value="150000">150.000</option>
+                <option value="200000">200.000</option>
+                <option value="250000">250.000</option>
+                <option value="300000">300.000</option>
+
+            </select>
+        </div> 
+        <button type="button" onclick="calcularTotalC()">Calcular TOTAL</button>
+      </div>
+        </form>
+        <div class="container" >
+            <div class="column">
+                <label for="ValorADICIONAL">(Valor adicional):</label>
+            </div>
+            <div class="column">
+                <input type="number" id="VAcosto" value="0"  step="0.01">
+            </div>    
+        </div>
+    <h1>VENTA TOTAL</h1>
+     <div id="VTVC"></div> 
+</div>
+    <br>
+   
+    
+
+    </body>
+    
+</html>
